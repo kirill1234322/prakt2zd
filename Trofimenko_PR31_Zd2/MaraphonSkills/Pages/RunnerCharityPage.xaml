@@ -1,0 +1,52 @@
+﻿<Page x:Class="MaraphonSkills.Pages.RunnerCharityPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MaraphonSkills.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RunnerCharityPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Center" Grid.ColumnSpan="2">
+            <Label Content="Мои спонсоры"/>
+            <TextBlock Text="Здесь показаны все ваши спонсоры в Marathon Skills."/>
+            <ComboBox x:Name="CharityComboBox" SelectionChanged="CharityComboBox_SelectionChanged"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center">
+            <Label x:Name="CharityNameLabel"/>
+            <Image x:Name="CharityLogoImage" Width="200" Height="200"/>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock x:Name="CharityDescriptionTextBlock"/>
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Спонсор" Width="200"/>
+                <TextBlock Text="Взнос" Width="200"/>
+            </StackPanel>
+            <ItemsControl x:Name="CharityItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Charity.CharityName}" Width="200"/>
+                            <TextBlock Text="{Binding Amount, StringFormat='$ {0}'}" Width="200"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <Rectangle Fill="Black" Height="3" Width="auto"/>
+            <Label x:Name="DonationAmount" HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Page>

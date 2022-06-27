@@ -1,0 +1,11 @@
+C:\Users\311-16(student)\source\repos\MarathonLibrary\bin\Debug\MarathonLibrary.dll
+C:\Users\311-16(student)\source\repos\MarathonLibrary\bin\Debug\MarathonLibrary.pdb
+C:\Users\311-16(student)\source\repos\MarathonLibrary\obj\Debug\MarathonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\311-16(student)\source\repos\MarathonLibrary\obj\Debug\MarathonLibrary.dll
+C:\Users\311-16(student)\source\repos\MarathonLibrary\obj\Debug\MarathonLibrary.pdb
+C:\Users\erik8\Desktop\repos\MarathonLibrary\bin\Debug\MarathonLibrary.dll
+C:\Users\erik8\Desktop\repos\MarathonLibrary\bin\Debug\MarathonLibrary.pdb
+C:\Users\erik8\Desktop\repos\MarathonLibrary\obj\Debug\MarathonLibrary.csproj.AssemblyReference.cache
+C:\Users\erik8\Desktop\repos\MarathonLibrary\obj\Debug\MarathonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\erik8\Desktop\repos\MarathonLibrary\obj\Debug\MarathonLibrary.dll
+C:\Users\erik8\Desktop\repos\MarathonLibrary\obj\Debug\MarathonLibrary.pdb

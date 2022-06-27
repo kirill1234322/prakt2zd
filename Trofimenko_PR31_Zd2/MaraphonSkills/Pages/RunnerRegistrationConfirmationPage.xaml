@@ -1,0 +1,22 @@
+﻿<Page x:Class="MaraphonSkills.Pages.RunnerRegistrationConfirmationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MaraphonSkills.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Спасибо за регистрацию">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 200">
+            <Label Content="Спасибо за вашу регистрацию в качестве бегуна!" Style="{DynamicResource GrayHeader}" HorizontalAlignment="Center" Margin="0 0 0 15"/>
+            <Label Content="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2022!&#xD;&#xA;&#xD;&#xA;                              С вами свяжутся по поводу оплаты.&#xD;&#xA;" 
+				   HorizontalAlignment="Center" Style="{DynamicResource DarkGrayLabel}"/>
+
+            <Border Style="{StaticResource SmallButtonBorder}" x:Name="LoginButton" Width="70" Height="35" Margin="0 15 0 0" MouseLeftButtonDown="BackButton_MouseLeftButtonDown">
+                <TextBlock Text="OK" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
